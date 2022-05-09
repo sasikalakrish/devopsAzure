@@ -30,3 +30,8 @@ steps:
     repository: 'sasikrishna27 / webrep'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'sasiserver'
+    repository: 'sasikrishna27/webrep'
+    command: 'push'
